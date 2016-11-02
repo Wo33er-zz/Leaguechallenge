@@ -1,0 +1,92 @@
+$tableBg = #4a4a4a;
+$tableBgAccent = #525252;
+$tableBgHover = rgba(49,49,49,.12);
+
+.summoners-table {
+  width: 100%;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+  background-color: $tableBg;
+  margin-bottom: 2rem;
+
+  tr {
+    height: 60px;
+  }
+  tbody {
+    border-top: 1px solid rgba(0,0,0,.12);
+  }
+  tr, th, td {
+    padding: 0 1.6rem;
+  }
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: $tableBgAccent;
+  }
+  tbody tr:hover > td,
+  tbody tr:hover > th {
+    background-color: $tableBgHover;
+  }
+  th.header {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: gray;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      &.headerSortUp:after,
+      &.headerSortDown:after {
+        left: 15px;
+      }
+    }
+    &:not(:last-of-type) {
+      &.headerSortUp:after,
+      &.headerSortDown:after {
+        right: 15px;
+      }
+    }
+    &:hover {
+      background-color: #616161;
+    }
+  }
+
+  th.headerSortUp,
+  th.headerSortDown {
+    background-color: #6b6b6b;
+
+    &:after {
+      position: absolute;
+      top: 28px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+    }
+  }
+  th.headerSortUp:after {
+    border-bottom: 5px solid white;
+  }
+  th.headerSortDown:after {
+    border-top: 5px solid white;
+  }
+
+  th:last-of-type,
+  td:last-of-type {
+    text-align: right;
+  }
+}
+
+.summoners-table-thumbnail {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: transparent;
+  border-radius: 6px;
+  border: 1px solid #2f2f2f;
+}
+.summoners-table-thumbnail-td {
+  padding: 0 0 0 1.6rem !important;
+}

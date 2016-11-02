@@ -1,0 +1,6 @@
+/node_modules
+/bower_components
+/public/css
+/data/apiKey.js
+/data/summoners.js
+.DS_Store

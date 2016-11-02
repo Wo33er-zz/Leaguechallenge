@@ -1,0 +1,32 @@
+{
+  "name": "leaguechallenge",
+  "version": "0.0.1",
+  "description": "League of Legends statistic tool",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:porostar/leaguechallenge.git"
+  },
+  "keywords": [
+    "valor"
+  ],
+  "dependencies": {
+    "async": "^2.1.1",
+    "connect-livereload": "^0.5.4",
+    "express": "^4.13.4",
+    "express-handlebars": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-stylus": "^2.5.0",
+    "gulp-nodemon": "^2.1.0",
+    "nodemon": "^1.10.0",
+    "request": "^2.75.0",
+    "stylus": "^0.54.5"
+  },
+  "private": true,
+  "license": "MIT",
+  "main": "app.js"
+}

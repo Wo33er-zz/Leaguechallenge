@@ -1,0 +1,19 @@
+{
+  "name": "leaguechallenge",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#^4.6.3",
+    "tablesorter": "*"
+  },
+  "private": true,
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css"
+      ]
+    }
+  }
+}

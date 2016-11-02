@@ -1,0 +1,33 @@
+<table class="summoners-table">
+  <thead>
+    <tr>
+      <th colspan="2">Summoner</th>
+      <th>Games</th>
+      <th>Wins</th>
+      <th>Av. CS</th>
+      <th>Av. Gold</th>
+      <th>Av. Damage</th>
+      <th>Av. KDA</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data }}
+      <tr>
+        <td class="summoners-table-thumbnail-td"><div class="summoners-table-thumbnail" style="background-image:url('http://ddragon.leagueoflegends.com/cdn/6.21.1/img/profileicon/{{ icon }}.png')">{{ race }}</div></td>
+        <td><strong>{{ name }}</strong></td>
+        <td><i>{{ games }}</i></td>
+        <td>{{ wins }}</td>
+        <td>{{ avMinions }}</td>
+        <td>{{ avGold }}</td>
+        <td>{{ avDamage }}</td>
+        <td>{{ avKills }} / {{ avDeaths }} / {{ avAssists }}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<script>
+	$(document).ready(function() {
+		$(".summoners-table").tablesorter({ sortList: [[2,1]] });
+	});
+</script>

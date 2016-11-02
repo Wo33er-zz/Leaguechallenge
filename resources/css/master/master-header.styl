@@ -1,0 +1,101 @@
+$masterHeaderBg = #222222;
+
+#master-header {
+  position: fixed;
+	width: 100%;
+	height: 34px;
+	background-color: $masterHeaderBg;
+  z-index: 999;
+  color: #808080;
+  border-bottom: 1px solid #404040;
+}
+.master-header-inner {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  margin: 0 auto;
+	display: flex;
+}
+
+.master-header-icon {
+  position: absolute;
+  top: 2px;
+  width: 45px;
+  height: 45px;
+  background-image: url("/images/icons/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+.master-header-navigation {
+  height: 100%;
+  flex: 1 0 auto;
+  margin-left: 50px;
+}
+.master-header-navigation ul {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  display: flex;
+}
+.master-header-navigation li {
+  display: flex;
+  align-items: center;
+	height: 100%;
+  list-style: none;
+  margin-right: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+.master-header-navigation a {
+	display: block;
+	height: 100%;
+  display: flex;
+	align-items: center;
+	padding: 0 10px;
+	font-weight: bold;
+	color: white;
+
+	&:hover {
+		color: white;
+		background-color: #383838;
+		text-decoration: none;
+	}
+}
+
+.master-header-social {
+  align-self: center;
+}
+.master-header-social ul {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  display: flex;
+}
+.master-header-social li {
+  font-size: 0.7em;
+  align-self: center;
+	height: 100%;
+  list-style: none;
+  margin-left: 10px;
+
+  &:last-of-type {
+    padding-right: 10px;
+  }
+}
+.master-header-social a {
+	height: 16px;
+  width: 16px;
+  display: block;
+}
+
+.master-header-social-github {
+	background-image:url('/images/icons/github.png');
+  background-size: cover;
+}
