@@ -21,7 +21,7 @@ The code repository for the League of Legends 3k Challenge statistic tool. A qui
 
 ## Installation
 
-1. `git clone git@bitbucket.org:porostar/leaguechallenge.git`
+1. `git clone git@github.com:Wo33er/Leaguechallenge.git`
 3. `npm install`
 4. `bower install`
 5. Document your api key in './data/apiKey.js'
